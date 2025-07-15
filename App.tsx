@@ -1,28 +1,32 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import CustomToggle from "./src/components/TextInput/Input";
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
+  const [value, setValue] = useState('');
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+      <CustomToggle value={value} setValue={(str) => setValue(str)}>
+        Help Text
+      </CustomToggle>
+      <View style={styles.outbox}></View> 
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: "#671849",
+  },
+  outbox: {
+    flex: 7,
+    backgroundColor: "white",
+    width: "100%",
   },
 });
-
-export default App;
