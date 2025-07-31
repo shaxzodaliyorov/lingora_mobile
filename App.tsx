@@ -5,16 +5,26 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import {StyleSheet, Text, useColorScheme, View } from 'react-native';
+import SocialButton from './src/componentes/Buttons/SocialButton';
+import UpgradeButton from './src/componentes/Buttons/UpgradeButton';
+
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+      <SocialButton onPress={() => {}} />
+      <SocialButton onPress={() => {}} />
+      <SocialButton outlined onPress={() => {}} />
+      <SocialButton disabled />
+      <Text style={{color: "white", alignSelf: "center"}}>No Align Self Center ↑↓</Text>
+      <UpgradeButton/>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'row'}}>
+        <Text style={{color: "white"}}>Wrapped with View   </Text>
+        <UpgradeButton/>
+      </View>
     </View>
   );
 }
@@ -22,6 +32,7 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 50,
   },
 });
 
