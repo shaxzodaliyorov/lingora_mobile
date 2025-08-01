@@ -11,7 +11,7 @@ const UpgradeButton = ({ onPress = () => {} }) => {
         end={{ x: 1, y: 1 }}
         style={styles.button}
       >
-        <Text style={styles.text}>Upgrade</Text>
+        <Text style={styles.text}>🔝 Upgrade</Text>
       </LinearGradient>
     </TouchableOpacity>
   )

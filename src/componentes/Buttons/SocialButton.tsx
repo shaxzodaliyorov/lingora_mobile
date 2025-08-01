@@ -30,7 +30,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({
       disabled={disabled}
     >
       <View style={styles.iconLabel}>
-        <FontAwesome name="facebook" size={20} color="#3b5998" style={styles.icon} />
+        <Text style={{fontSize: 20, marginRight: 8}}>🌐</Text>
         <Text style={[styles.label, disabled && styles.labelDisabled]}>{label}</Text>
       </View>
     </TouchableOpacity>

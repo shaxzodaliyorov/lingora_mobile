@@ -28,79 +28,41 @@ function App() {
       </View>
       <Button size='md' text='Button' type='overlay'/>
 
-        {/* IconButton */}
-        {/* <IconButton
-          size='xs'
-          type='primary'
-          icon={<Text style={{color: 'white'}}>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        />
-        <IconButton
-          size='sm'
-          type='primary'
-          icon={<Text style={{color: 'white'}}>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        />
-        <IconButton
-          size='md'
-          type='primary'
-          icon={<Text style={{color: 'white'}}>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        />
-          <IconButton
-          size='lg'
-          type='primary'
-          icon={<Text style={{color: 'white'}}>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        />
-          <IconButton
-          size='xl'
-          type='primary'
-          icon={<Text style={{color: 'white'}}>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        />
-          <IconButton
-          size='xxl'
-          type='primary'
-          icon={<Text>O</Text>}
-          onPress={() => console.log('Icon Button Pressed')}
-        /> */}
-
         <IconButton
           size='xs'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>O</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>➡️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
         />
           <IconButton
           size='sm'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>O</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>⬅️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
         />
          <IconButton
           size='md'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>O</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>➡️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
         />
           <IconButton
           size='lg'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>O</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>⬅️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
         />
         <IconButton
           size='xl'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>{"-->"}</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>⬅️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
         />
       
         <IconButton
           size='xxl'
           type='primary'
-          icon={size => <Text style={{color: 'white', fontSize: size}}>{"<"}---</Text>}
+          icon={size => <Text style={{color: 'white', fontSize: size}}>➡️</Text>}
           onPress={() => console.log('Icon Button Pressed')}
           onLayout={e => console.log('sm width:', e.nativeEvent.layout.width)}
 
